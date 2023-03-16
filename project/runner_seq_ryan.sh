@@ -19,7 +19,7 @@
 # In order for this to send emails, you will need to remove the
 # space between # and SBATCH for the following 2 commands.
 # Specify the recipient of the email
-# SBATCH --mail-user=abc1234@rit.edu
+# SBATCH --mail-user=rjs2995@rit.edu
 
 # Notify on state change: BEGIN, END, FAIL or ALL
 # SBATCH --mail-type=ALL
@@ -34,7 +34,7 @@
 #
 # Your job script goes below this line.
 #
-
+make seq_hh
 # Place your mpirun command here
 # Notice that you have to provide the number of processes that
 # are needed. This number needs to match the number of cores
