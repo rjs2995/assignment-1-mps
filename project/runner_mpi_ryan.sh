@@ -54,3 +54,4 @@ make mpi_hh
 srun -n 11 mpi_hh -d 30 -c 100
 srun -n 11 mpi_hh -d 33 -c 100
 srun -n 11 mpi_hh -d 36 -c 100
+
