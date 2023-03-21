@@ -10,7 +10,7 @@
 # that information here, rather than the command line.
 
 # Name of the job - You MUST use a unique name for the job
-#SBATCH -J p6d15c10
+#SBATCH -J AUBREY_MPI
 
 # Standard out and Standard Error output files
 # Each job should have a unique file name; otherwise, all of the
@@ -30,7 +30,7 @@
 # Multiple options can be used on the same line as shown below.
 # Here, we set the partition and the number of cores to use,
 # and specify the amount of memory we would like per core.
-#SBATCH -p kgcoe-mps -n 6
+#SBATCH -p kgcoe-mps -n 20
 #SBATCH --mem-per-cpu 1G
 
 #
@@ -49,4 +49,6 @@ spack load --first openmpi
 # indicated by the -n option. If these do not, your results will
 # not be valid or you may have wasted resources that others could
 # have used. Using $SLURM_NPROCS guarantees a match.
+# d: dendrites
+# c: compartments
 srun -n $SLURM_NPROCS mpi_hh -d 15 -c 10
